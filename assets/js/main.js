@@ -172,6 +172,14 @@ function initLightbox() {
       e.preventDefault();
       open(i, trigger);
     });
+
+    // The triggers are divs with role="button", so Enter and Space have to be
+    // wired up by hand to match what a real button would do.
+    trigger.addEventListener('keydown', (e) => {
+      if (e.key !== 'Enter' && e.key !== ' ') return;
+      e.preventDefault();
+      open(i, trigger);
+    });
   });
 
   closeBtn.addEventListener('click', close);

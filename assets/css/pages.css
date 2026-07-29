@@ -630,6 +630,11 @@
 /* =========================================================================
    Live — split panels
    ========================================================================= */
+/* The two panels rest translated outward and slide together on scroll, so the
+   section has to clip them — otherwise they widen the page at every breakpoint.
+   `clip` rather than `hidden` so no scroll container is created. */
+[data-panels] { overflow: clip; }
+
 .panels {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -752,14 +757,17 @@
   text-transform: uppercase;
   color: var(--gold);
 }
+/* Both are spans, so they need to be blocks or the headline and the note
+   run together on one line. */
 .press__title {
+  display: block;
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(1.25rem, 2.4vw, 1.9rem);
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 0.4rem;
 }
-.press__note { font-size: 0.875rem; color: var(--muted); }
+.press__note { display: block; font-size: 0.875rem; color: var(--muted); }
 .press__go {
   width: 44px; height: 44px;
   display: grid;

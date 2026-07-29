@@ -7,33 +7,10 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd2e225c-4546-4185-ade1-1c2637b9d5c8" name="Changes" comment="j">
+    <list default="true" id="bd2e225c-4546-4185-ade1-1c2637b9d5c8" name="Changes" comment="1.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/animate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/magnific-popup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/tooplate-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/home-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/profile-image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/work-image1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/work-image2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/work-image3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/custom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.magnific-popup.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.parallax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/magnific-popup-options.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/smoothscroll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/wow.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/pages.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/pages.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,23 +55,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0" />
-      <entry key="M2" value="1.0" />
-      <entry key="M5" value="1.0" />
-      <entry key="M10" value="1.0" />
-      <entry key="M15" value="1.0" />
-      <entry key="M30" value="1.0" />
-      <entry key="H1" value="1.0" />
-      <entry key="H2" value="1.0" />
-      <entry key="H4" value="1.0" />
-      <entry key="D1" value="1.0" />
-      <entry key="W1" value="1.0" />
+      <entry key="MS100" value="1.0504151099513828" />
+      <entry key="MS500" value="1.5501893046830686" />
+      <entry key="S2" value="1.861247622301833" />
+      <entry key="S5" value="1.9420006758301418" />
+      <entry key="S10" value="1.9705671928466064" />
+      <entry key="S30" value="1.9900912043468026" />
+      <entry key="S60" value="1.9950335338007321" />
+      <entry key="M2" value="1.9980291404038835" />
+      <entry key="M5" value="2.0474134806339244" />
+      <entry key="M10" value="2.219522226887607" />
+      <entry key="M15" value="2.3641210548067404" />
+      <entry key="M30" value="2.60353342252969" />
+      <entry key="H1" value="2.7768979569553482" />
+      <entry key="H2" value="2.881423730888894" />
+      <entry key="H4" value="2.938843047351539" />
+      <entry key="D1" value="2.9895374784916986" />
+      <entry key="W1" value="2.9984986129087376" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -116,23 +93,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8350879194283694" />
-      <entry key="MS500" value="0.9645981845841383" />
-      <entry key="S2" value="0.9910295632640791" />
-      <entry key="S5" value="0.9964021225885421" />
-      <entry key="S10" value="0.9981994402866303" />
-      <entry key="S30" value="0.9993994528441876" />
-      <entry key="S60" value="0.9996996813264409" />
-      <entry key="M2" value="0.999849829387614" />
-      <entry key="M5" value="0.9999399290486833" />
-      <entry key="M10" value="0.9999699640732632" />
-      <entry key="M15" value="0.9999799759486011" />
-      <entry key="M30" value="0.9999899879241797" />
-      <entry key="H1" value="0.9999949939495596" />
-      <entry key="H2" value="0.9999974969716472" />
-      <entry key="H4" value="0.9999987484850404" />
-      <entry key="D1" value="0.9999997914140646" />
-      <entry key="W1" value="0.9999999702020066" />
+      <entry key="MS100" value="1.0284568037054738" />
+      <entry key="MS500" value="1.5429966037248277" />
+      <entry key="S2" value="1.859015326326773" />
+      <entry key="S5" value="1.9410626627024252" />
+      <entry key="S10" value="1.9700902092475265" />
+      <entry key="S30" value="1.9899303924022969" />
+      <entry key="S60" value="1.994952897724497" />
+      <entry key="M2" value="1.9979886872564891" />
+      <entry key="M5" value="2.0473944085021087" />
+      <entry key="M10" value="2.2195075339824295" />
+      <entry key="M15" value="2.3641083668674323" />
+      <entry key="M30" value="2.6035246829308463" />
+      <entry key="H1" value="2.7768927196277664" />
+      <entry key="H2" value="2.881420850679451" />
+      <entry key="H4" value="2.938841535406935" />
+      <entry key="D1" value="2.989537215929731" />
+      <entry key="W1" value="2.998498575132934" />
     </decayedShown>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
@@ -205,6 +182,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="j" />
-    <option name="LAST_COMMIT_MESSAGE" value="j" />
+    <MESSAGE value="1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.0" />
   </component>
 </project>
