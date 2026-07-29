@@ -56,10 +56,6 @@ function initSmoothScroll() {
   lenis.on('scroll', ScrollTrigger.update);
   gsap.ticker.add((time) => lenis.raf(time * 1000));
   gsap.ticker.lagSmoothing(0);
-
-  // The admin panel pauses this while it is open, otherwise the page keeps
-  // scrolling underneath the overlay.
-  window.__yudytskaLenis = lenis;
 }
 
 /* =========================================================================
@@ -115,25 +111,6 @@ function splitLines(el) {
   el.dataset.split = 'done';
   return inners;
 }
-
-/**
- * Rebuilds the masked lines after the admin panel rewrites a heading.
- *
- * The reveal for this element has normally already played, so the new lines
- * are placed in their finished position rather than animated in again.
- */
-export function resplit(el) {
-  if (!el) return;
-  if (reduced) { gsap.set(el, { opacity: 1 }); return; }
-
-  const inners = splitLines(el);
-  gsap.set(el, { opacity: 1 });
-  gsap.set(inners, { yPercent: 0 });
-  ScrollTrigger.refresh();
-}
-
-// apply.js reaches for this by name so it does not have to import the engine.
-window.__yudytskaResplit = resplit;
 
 /* =========================================================================
    Reveals

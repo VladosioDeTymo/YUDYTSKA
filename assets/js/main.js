@@ -3,30 +3,16 @@
    the YouTube facade, and the first-visit intro.
    ========================================================================= */
 
-import { LINKS, YT_ID } from './config.js';
+import { LINKS, WATCH_URL, YT_ID } from './config.js';
 import { initMotion, reduced } from './motion.js';
 import { initTransitions } from './transitions.js';
-import { applyContent, applyLinkOverrides } from './admin/apply.js';
-import * as store from './admin/store.js';
 
 const { gsap } = window;
-
-/** The clip id, and the watch URL built from it, after admin overrides. */
-export function currentYtId() {
-  return store.value('links', 'ytId') || YT_ID;
-}
-
-function currentWatchUrl() {
-  const id = currentYtId();
-  return id ? `https://www.youtube.com/watch?v=${id}` : LINKS.youtube;
-}
 
 /* =========================================================================
    Links — the markup carries `data-link="instagram"`, config.js carries the URL
    ========================================================================= */
 function applyLinks() {
-  applyLinkOverrides(LINKS);
-
   document.querySelectorAll('[data-link]').forEach((el) => {
     const key = el.dataset.link;
     if (key === 'email') {
@@ -34,7 +20,7 @@ function applyLinks() {
       return;
     }
     if (key === 'watch') {
-      el.href = currentWatchUrl();
+      el.href = WATCH_URL;
       return;
     }
     if (LINKS[key]) el.href = LINKS[key];
@@ -280,7 +266,7 @@ function initVideo() {
   const btn = player.querySelector('[data-video-play]');
   btn?.addEventListener('click', () => {
     const frame = document.createElement('iframe');
-    frame.src = `https://www.youtube-nocookie.com/embed/${currentYtId()}?autoplay=1&rel=0&modestbranding=1`;
+    frame.src = `https://www.youtube-nocookie.com/embed/${YT_ID}?autoplay=1&rel=0&modestbranding=1`;
     frame.title = 'YUDYTSKA — «Ідеальні вони» (офіційний кліп)';
     frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
     frame.allowFullscreen = true;
@@ -330,19 +316,7 @@ function runIntro() {
 /* =========================================================================
    Boot
    ========================================================================= */
-async function boot() {
-  // Published and draft content is painted on before anything measures the
-  // page, so line-splitting and pin lengths are computed from the final text.
-  //
-  // Bounded, because this touches IndexedDB and the network: in a private
-  // window, with storage blocked, or offline, an unbounded await here would
-  // leave the whole site uninitialised. Late content still applies when it
-  // arrives — it just no longer holds up the page.
-  await Promise.race([
-    applyContent().catch(() => {}),
-    new Promise((resolve) => setTimeout(resolve, 1500)),
-  ]);
-
+function boot() {
   // If the animation libraries failed to load (offline, blocked CDN), fall back
   // to the no-JS presentation rather than leaving the page hidden at opacity 0.
   if (!window.gsap || !window.ScrollTrigger) {
@@ -361,9 +335,6 @@ async function boot() {
   runIntro();
   initMotion();
   initTransitions();
-
-  // The gate is tiny; the panel itself is only fetched once the code is right.
-  import('./admin/gate.js').then((m) => m.initGate()).catch(() => {});
 }
 
 if (document.readyState === 'loading') {

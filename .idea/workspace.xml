@@ -9,7 +9,21 @@
   <component name="ChangeListManager">
     <list default="true" id="bd2e225c-4546-4185-ade1-1c2637b9d5c8" name="Changes" comment="admin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/admin/panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/admin/panel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/admin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/data/content.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/admin/apply.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/admin/gate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/admin/github.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/admin/panel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/admin/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/motion.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/motion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/live.html" beforeDir="false" afterPath="$PROJECT_DIR$/live.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music.html" beforeDir="false" afterPath="$PROJECT_DIR$/music.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/press.html" beforeDir="false" afterPath="$PROJECT_DIR$/press.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
