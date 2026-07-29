@@ -1,0 +1,295 @@
+/* =========================================================================
+   base.css — tokens, reset, typography, cinematic layer
+   ========================================================================= */
+
+/* ---------- Fonts ---------- */
+/* Cormorant Garamond + Manrope, both with full Cyrillic coverage. */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+/* =========================================================================
+   Tokens
+   ========================================================================= */
+:root {
+  /* Palette — derived from the hero photograph: blue velvet, gold mic,
+     black leather. Dark-only by design; there is no light theme. */
+  --ink:          #04060C;
+  --velvet:       #0A1730;
+  --velvet-lift:  #132444;
+  --velvet-deep:  #071021;
+  --gold:         #C9A227;
+  --gold-soft:    #D9BE72;
+  --gold-bright:  #F2E0AE;
+  --ivory:        #F4F0E6;
+  --muted:        #93A0B8;
+
+  --hairline:     rgba(217, 190, 114, 0.18);
+  --hairline-str: rgba(217, 190, 114, 0.42);
+  --shade:        rgba(4, 6, 12, 0.72);
+
+  /* Type scale — fluid, clamped at both ends. */
+  --fs-display: clamp(3.4rem, 11vw, 9.5rem);
+  --fs-h1:      clamp(2.6rem, 7vw, 5.6rem);
+  --fs-h2:      clamp(2.1rem, 5vw, 3.9rem);
+  --fs-h3:      clamp(1.5rem, 2.6vw, 2.1rem);
+  --fs-lead:    clamp(1.1rem, 1.6vw, 1.4rem);
+  --fs-body:    clamp(1rem, 1.05vw, 1.0625rem);
+  --fs-small:   0.875rem;
+  --fs-eyebrow: 0.75rem;
+
+  /* Spacing — a 4px-derived ramp. */
+  --sp-1: 0.5rem;
+  --sp-2: 1rem;
+  --sp-3: 1.5rem;
+  --sp-4: 2rem;
+  --sp-5: 3rem;
+  --sp-6: 4.5rem;
+  --sp-7: 7rem;
+  --sp-8: 10rem;
+  --section-y: clamp(5rem, 12vh, 10rem);
+
+  --shell:    min(92vw, 82rem);
+  --shell-sm: min(92vw, 62rem);
+  --shell-xs: min(92vw, 44rem);
+
+  /* Motion */
+  --ease-out:  cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-io:   cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast:  180ms;
+  --dur-base:  280ms;
+  --dur-slow:  520ms;
+
+  /* Z-scale — kept sparse and named so nothing drifts. */
+  --z-grain:      10;
+  --z-nav:        60;
+  --z-menu:       70;
+  --z-lightbox:   80;
+  --z-curtain:    90;
+  --z-cursor:    100;
+}
+
+/* =========================================================================
+   Reset
+   ========================================================================= */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: auto; /* Lenis owns scrolling; native smooth would fight it. */
+}
+
+body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--ivory);
+  font-family: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: var(--fs-body);
+  font-weight: 400;
+  line-height: 1.7;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, p, figure, blockquote, ul, ol, dl, dd { margin: 0; }
+ul[class], ol[class] { list-style: none; padding: 0; }
+
+img, picture, video, svg { display: block; max-width: 100%; }
+img { height: auto; }
+
+button, input, textarea, select { font: inherit; color: inherit; }
+button { background: none; border: 0; padding: 0; cursor: pointer; }
+
+a { color: inherit; text-decoration: none; }
+
+/* =========================================================================
+   Typography
+   ========================================================================= */
+.display,
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  font-weight: 600;
+  line-height: 0.98;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); line-height: 1.15; }
+
+.display {
+  font-size: var(--fs-display);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.eyebrow {
+  font-family: 'Manrope', sans-serif;
+  font-size: var(--fs-eyebrow);
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-soft);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+.eyebrow::before {
+  content: '';
+  width: clamp(1.5rem, 4vw, 3rem);
+  height: 1px;
+  background: var(--gold);
+  flex: none;
+}
+
+.lead {
+  font-size: var(--fs-lead);
+  line-height: 1.65;
+  color: var(--muted);
+  max-width: 46ch;
+}
+
+p { max-width: 68ch; }
+
+.serif-italic {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.gold { color: var(--gold-soft); }
+.numeric { font-variant-numeric: tabular-nums; }
+
+/* =========================================================================
+   Cinematic layer — film grain + vignette over everything
+   ========================================================================= */
+.grain {
+  position: fixed;
+  inset: -50%;
+  z-index: var(--z-grain);
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: var(--grain-src);
+  background-size: 220px 220px;
+}
+
+.vignette {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-grain);
+  pointer-events: none;
+  background: radial-gradient(120% 90% at 50% 45%, transparent 42%, rgba(4, 6, 12, 0.55) 100%);
+}
+
+/* =========================================================================
+   Layout utilities
+   ========================================================================= */
+.shell    { width: var(--shell);    margin-inline: auto; }
+.shell-sm { width: var(--shell-sm); margin-inline: auto; }
+.shell-xs { width: var(--shell-xs); margin-inline: auto; }
+
+.section { padding-block: var(--section-y); position: relative; }
+
+.rule {
+  height: 1px;
+  background: var(--hairline);
+  border: 0;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.skip-link {
+  position: absolute;
+  top: var(--sp-2);
+  left: var(--sp-2);
+  z-index: 200;
+  padding: 0.75rem 1.25rem;
+  background: var(--gold);
+  color: var(--ink);
+  font-weight: 700;
+  border-radius: 2px;
+  transform: translateY(-200%);
+  transition: transform var(--dur-base) var(--ease-out);
+}
+.skip-link:focus-visible { transform: translateY(0); }
+
+/* =========================================================================
+   Focus
+   ========================================================================= */
+:focus-visible {
+  outline: 2px solid var(--gold-bright);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+/* =========================================================================
+   Reveal primitives
+   These are the resting states motion.js animates away from. If JS never
+   runs, `.no-js` on <html> makes everything visible instead.
+   ========================================================================= */
+/* Content is visible by default. Only once JS confirms it is running
+   (html.js) do we hide it, so a script failure never blanks the page. */
+.js [data-reveal],
+.js [data-split] { opacity: 0; }
+
+.no-js [data-reveal],
+.no-js [data-split] {
+  opacity: 1 !important;
+  transform: none !important;
+  clip-path: none !important;
+}
+
+/* Masked lines produced by splitLines() in motion.js. */
+.line {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.06em; /* keeps descenders from being clipped */
+  margin-bottom: -0.06em;
+}
+.line-inner { display: block; }
+
+/* =========================================================================
+   Reduced motion — animations are removed, not merely shortened.
+   ========================================================================= */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .grain { display: none; }
+}
+
+/* =========================================================================
+   Print — reveals are scroll-driven, so without this the page prints blank.
+   ========================================================================= */
+@media print {
+  .js [data-reveal],
+  .js [data-split],
+  .line,
+  .line-inner,
+  .fig,
+  .fig img {
+    opacity: 1 !important;
+    transform: none !important;
+    clip-path: none !important;
+  }
+  .nav, .menu, .grain, .vignette, .curtain, .intro, .cursor { display: none !important; }
+  body { background: #fff; color: #000; }
+}

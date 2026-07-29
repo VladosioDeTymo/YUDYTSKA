@@ -1,246 +1,474 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk" class="no-js">
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YUDYTSKA — українська співачка | Живий вокал і саксофон, Чернігів</title>
+<meta name="description" content="YUDYTSKA (Альона Юдицька) — українська співачка з Чернігова. Живий вокал, авторські пісні, ексклюзивний формат 2 в 1 із саксофоном. Виступи по всій Україні.">
+<link rel="canonical" href="https://yudytska.com/">
 
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="author" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:site_name" content="YUDYTSKA">
+<meta property="og:title" content="YUDYTSKA — українська співачка">
+<meta property="og:description" content="Живий вокал, авторські пісні, формат 2 в 1 із саксофоном. Виступи по всій Україні.">
+<meta property="og:image" content="https://yudytska.com/assets/img/hero-velvet-1280.jpg">
+<meta name="twitter:card" content="summary_large_image">
 
-<title>YUDYTSKA</title>
+<link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
 
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/animate.css">
-<link rel="stylesheet" href="css/magnific-popup.css">
-<link rel="stylesheet" href="css/font-awesome.min.css">
-<link rel="stylesheet" href="css/tooplate-style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="assets/img/hero-velvet-1280.webp" type="image/webp">
 
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/layout.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+
+<script>document.documentElement.className = 'js';</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicGroup",
+  "name": "YUDYTSKA",
+  "alternateName": "Альона Юдицька",
+  "genre": ["Pop", "R&B"],
+  "foundingLocation": { "@type": "Place", "name": "Чернігів, Україна" },
+  "url": "https://yudytska.com/",
+  "image": "https://yudytska.com/assets/img/hero-velvet-1280.jpg",
+  "email": "yudytska.music@gmail.com",
+  "sameAs": [
+    "https://www.instagram.com/alena__the_wise_24",
+    "https://youtube.com/@yudytska_music",
+    "https://open.spotify.com/artist/0RB1OhSPT4uSuSHk7KcUBI"
+  ],
+  "track": [
+    { "@type": "MusicRecording", "name": "Ідеальні вони", "datePublished": "2026" },
+    { "@type": "MusicRecording", "name": "Раз у житті", "datePublished": "2025" },
+    { "@type": "MusicRecording", "name": "Де ти", "datePublished": "2025" }
+  ]
+}
+</script>
 </head>
+
 <body>
 
-<div class="preloader">
-     <div class="spinner">
-          <span class="spinner-rotate"></span>
-     </div>
+<!-- Film grain source. Kept as a filter so no raster asset is downloaded. -->
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <filter id="grain-filter">
+    <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="3" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+  <defs>
+    <!-- Icon set: 24×24, 1.25 stroke. -->
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4.5"/><path d="M10.2 9.3v5.4l4.6-2.7z"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14.6 21.5V13h2.6l.5-3.3h-3.1V7.6c0-.95.35-1.6 1.8-1.6h1.45V3.05A21 21 0 0 0 15.5 2.9c-2.5 0-4.2 1.5-4.2 4.35V9.7H8.5V13h2.8v8.5z"/></symbol>
+    <symbol id="i-spotify" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M7.4 9.4c3-.75 6.2-.5 8.9.9M8 12.5c2.5-.6 5.1-.4 7.4.8M8.6 15.5c2-.45 4-.3 5.9.65"/></symbol>
+    <symbol id="i-telegram" viewBox="0 0 24 24"><path d="M21 4.4 2.9 11.2l5.1 1.7 1.9 5.8 2.7-3.2 4.4 3.3z"/><path d="M8 12.9 21 4.4l-9.4 11.1"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2.5" y="4.8" width="19" height="14.4" rx="2.5"/><path d="m3.4 6.6 8.6 6 8.6-6"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="2.4" width="6" height="11.5" rx="3"/><path d="M5.2 11.4a6.8 6.8 0 0 0 13.6 0M12 18.2v3.4M8.4 21.6h7.2"/></symbol>
+    <symbol id="i-disc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.4"/><circle cx="12" cy="12" r="2.6"/><path d="M12 2.6v3.6M12 17.8v3.6"/></symbol>
+    <symbol id="i-broadcast" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.5"/><path d="M7.7 7.7a6 6 0 0 0 0 8.6M16.3 16.3a6 6 0 0 0 0-8.6M4.8 4.8a10 10 0 0 0 0 14.4M19.2 19.2a10 10 0 0 0 0-14.4"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="M12 21.5s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10.4" r="2.7"/></symbol>
+    <symbol id="i-sax" viewBox="0 0 24 24"><path d="M13.6 2.5v7.2a5.4 5.4 0 0 1-5.4 5.4 3.6 3.6 0 0 0-3.6 3.6c0 1.6 1.3 2.8 2.9 2.8h6.7a6.3 6.3 0 0 0 6.3-6.3V9.6"/><path d="M11.4 2.5h4.4M16 6.6h.01M16 9.6h.01M16 12.6h.01"/></symbol>
+    <symbol id="i-radio" viewBox="0 0 24 24"><rect x="2.5" y="8" width="19" height="12.5" rx="2.5"/><path d="m7 8 11.5-4.4"/><circle cx="8.6" cy="14.2" r="3"/><path d="M15 12.4h3.6M15 16h3.6"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M7.5 4.9 19 12 7.5 19.1z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 4.5v15M4.5 12h15"/></symbol>
+    <symbol id="i-ne" viewBox="0 0 24 24"><path d="M7 17 17 7M8.6 7H17v8.4"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#main">Перейти до вмісту</a>
+
+<!-- ===================================================================
+     Intro (first visit of the session only)
+     =================================================================== -->
+<div class="intro" data-intro aria-hidden="true">
+  <div class="intro__word">
+    <span>Y</span><span>U</span><span>D</span><span>Y</span><span>T</span><span>S</span><span>K</span><span>A</span>
+  </div>
+  <div class="intro__rule"></div>
 </div>
 
-<section id="home" class="parallax-section">
-     <div class="container">
-          <div class="row">
+<!-- ===================================================================
+     Navigation
+     =================================================================== -->
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html" aria-label="YUDYTSKA — на головну">
+      <span class="brand__eq" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+      YUDYTSKA
+    </a>
 
-               <div class="col-md-offset-5 col-md-7 col-sm-12">
-                    <div class="home-thumb">
-                         <h1 class="wow fadeInUp" data-wow-delay="0.4s">Привіт, я Альона.</h1>
-                         <p class="wow fadeInUp white-color" data-wow-delay="0.6s">На цьому сайті Ви можете більше дізнатися про мене.</p>
-                         <a href="#service" class="wow fadeInUp smoothScroll btn btn-default section-btn" data-wow-delay="1s">Дізнатися...</a>
-                    </div>
-               </div>
+    <nav aria-label="Основна навігація">
+      <ul class="nav__links">
+        <li><a class="nav__link" href="index.html" aria-current="page">Головна</a></li>
+        <li><a class="nav__link" href="about.html">Про мене</a></li>
+        <li><a class="nav__link" href="music.html">Музика</a></li>
+        <li><a class="nav__link" href="live.html">Виступи</a></li>
+        <li><a class="nav__link" href="press.html">Медіа</a></li>
+      </ul>
+    </nav>
 
-          </div>
-     </div>
-</section>
+    <button class="burger" type="button" data-burger aria-expanded="false" aria-controls="menu" aria-label="Відкрити меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
 
-<section id="service" class="parallax-section">
-     <div class="container">
-          <div class="row">
-
-               <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
-                    <h2>Ось, що я роблю:</h2>
-                    <p></p>
-               </div>
-
-               <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="service-thumb">
-                         <i class="fa fa-smile-o"></i>
-                         <h4>Виступаю</h4>
-                         <p>Співаю для Вас. Пишу свої пісні та ділюсь своїм музичним шляхом. Вже понад 2,5 роки проводжу музичні стріми на американській платформі, де мене підтримують понад 35 тисяч підписників. Створюю атмосферні live-етери, заряджаю емоціями та об’єдную людей через музику.</p>
-                    </div>
-               </div>
-
-               <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="service-thumb bg-grey">
-                         <i class="fa fa-camera"></i>
-                         <h4 class="white-color">Надихаю</h4>
-                         <p>Надихаю людей музикою та життям. Публікую анонси live-виступів у закладах Чернігова. Ділюся атмосферними звітами у форматі reels, пишу про красу, музику й моменти, які варті уваги. Мотивую людей на позитивні зміни.</p>
-                    </div>
-               </div>
-
-               <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="service-thumb">
-                         <i class="fa fa-lightbulb-o"></i>
-                         <h4>Створюю</h4>
-                         <p>14 квітня вийшов мій перший авторський трек під назвою «Де ти». Свої пісні я випускаю під творчим псевдонімом Yudytska.</p>
-                    </div>
-               </div>
-
-               <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
-                    <div class="service-thumb">
-                         <i class="fa fa-clone"></i>
-                         <h4>Не тільки Чернігів</h4>
-                         <p>Для замовлення виступу в будь-якому регіоні України телефонуйте за вказаним нижче номером.</p>
-                    </div>
-               </div>
-
-          </div>
-     </div>
-</section>
-
-<section id="about" class="parallax-section">
-     <div class="container">
-          <div class="row">
-
-               <div class="col-md-4 col-sm-8">
-                    <div class="about-image-thumb">
-                         <img src="images/profile-image.jpg" class="wow fadeInUp img-responsive" data-wow-delay="0.2s" alt="about image">
-                         <ul class="social-icon">
-
-                              <li><a href="https://www.instagram.com/alena__the_wise_24?igsh=MW4wcW82Nnp1dWNtdQ==" class="fa fa-instagram"></a></li>
-                              <li><a href="https://youtube.com/@yudytska_music?si=fPP1Eccni3UzcJ9Q" class="fa fa-youtube"></a></li>
-                              <li><a href="https://t.me/alyona_singer_ua" class="fa fa-telegram"></a></li>
-                         </ul>
-                    </div>
-               </div>
-
-               <div class="col-md-8 col-sm-12">
-                    <div class="about-thumb">
-                         <div class="wow fadeInUp section-title" data-wow-delay="0.6s">
-                              <h2>Трішки про мене...</h2>
-                              <p>Привіт! Мене звати Альона Юдицька. Я родом із мальовничої Новгород-Сіверщини, що на Чернігівщині. Вже понад 15 років моїм домом є Чернігів — місто, яке стало не просто місцем проживання, а справжньою частиною мого серця. Саме тут почалася моя доросла творча історія, наповнена музикою, пошуками, сценою й натхненням.</p>
-                         </div>
-                         <div class="wow fadeInUp" data-wow-delay="0.8s">
-                              <p>Я співаю з самого дитинства — у нашій родині спів завжди був у крові. Попри відсутність музичної освіти в попередніх поколіннях, любов до музики передавалася від серця до серця. З ранніх років я брала участь у конкурсах, здобувши понад 60 дипломів і грамот за перші та другі місця.</p>
-                              <p>Із 18 років почала їздити за кордон із вокальними контрактами, працювала в дуетах, тріо, бендах, а також як сольна виконавиця — і водночас активно виступаю в улюблених чернігівських закладах. Моїм хобі є діджєїнг та написання пісень.</p>
-                         </div>
-                    </div>
-               </div>
-
-          </div>
-     </div>
-</section>
-
-<section id="work" class="parallax-section">
-     <div class="container">
-          <div class="row">
-
-               <div class="col-md-12 col-sm-12">
-                    <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
-                         <h2>Більше мене</h2>
-                         <p></p>
-                    </div>
-               </div>
-
-               <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="0.4s">
-                    <div class="work-thumb">
-                         <a href="images/work-image1.jpg" class="image-popup">
-                              <div class="work-thumb-overlay">
-                                   <h4 class="white-color">Звук</h4>
-                                   <h2></h2>
-                              </div>
-                              <img src="images/work-image1.jpg" class="img-responsive" alt="Work 1">
-                         </a>
-                    </div>
-               </div>
-
-               <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="0.4s">
-                    <div class="work-thumb">
-                         <a href="images/work-image2.jpg" class="image-popup">
-                              <div class="work-thumb-overlay">
-                                   <h4 class="white-color">Емоція</h4>
-                                   <h2></h2>
-                              </div>
-                              <img src="images/work-image2.jpg" class="img-responsive" alt="Work 2">
-                         </a>
-                    </div>
-               </div>
-
-               <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="0.4s">
-                    <div class="work-thumb">
-                         <a href="images/work-image3.jpg" class="image-popup">
-                              <div class="work-thumb-overlay">
-                                   <h4 class="white-color">Душа</h4>
-                                   <h2></h2>
-                              </div>
-                              <img src="images/work-image3.jpg" class="img-responsive" alt="Work 3">
-                         </a>
-                    </div>
-               </div>
-
-          </div>
-     </div>
-</section>
-
-<section id="contact" class="parallax-section">
-     <div class="container">
-          <div class="row">
-
-               <div class="col-md-12 col-sm-12">
-                    <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
-                         <h2>Напишіть мені</h2>
-                         <p>Для замовлення виступу</p>
-                    </div>
-               </div>
-
-               <div class="col-md-7 col-sm-10">
-                    <div class="wow fadeInUp" data-wow-delay="0.4s">
-                        <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                              <div class="col-md-6 col-sm-6">
-                                   <input type="text" class="form-control" name="name" placeholder="Name" required="">
-                              </div>
-                              <div class="col-md-6 col-sm-6">
-                                   <input type="email" class="form-control" name="email" placeholder="Email" required="">
-                              </div>
-                              <div class="col-md-12 col-sm-12">
-                                   <textarea class="form-control" rows="5" name="message" placeholder="Message" required=""></textarea>
-                              </div>
-                              <div class="col-md-offset-8 col-md-4 col-sm-offset-6 col-sm-6">
-                                   <button id="submit" type="submit" class="form-control">Send Message</button>
-                              </div>
-                        </form>
-                    </div>
-               </div>
-
-               <div class="col-md-5 col-sm-8">
-                    <div class="wow fadeInUp contact-info" data-wow-delay="0.4s">
-                         <div class="section-title">
-                              <h2>Контактна інформація</h2>
-                              <p></p>
-                         </div>
-
-                         <p><i class="fa fa-map-marker"></i> Чернігів, Україна</p>
-                         <p><i class="fa fa-comment"></i> <a href="mailto:info@company.com"> yudytska.music@gmail.com</a></p>
-                         <p><i class="fa fa-phone"></i>Для зв'язку писати на Telegram. Посилання вказано вище.</p>
-                    </div>
-               </div>
-
-          </div>
-     </div>
-</section>
-
-<footer>
-    <div class="container">
-        <div class="row">
-
-               <div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="0.8s">
-                    <p class="white-color">YUDYTSKA | OFFICIAL</p>
-                    <div class="wow fadeInUp" data-wow-delay="1s">
-                         <ul class="social-icon">
-                         </ul>
-                    </div>
-          </div>
-     </div>
+<div class="menu" id="menu" data-menu aria-hidden="true">
+  <ul class="menu__list">
+    <li class="menu__item"><a class="menu__link" href="index.html"><span class="menu__num">01</span>Головна</a></li>
+    <li class="menu__item"><a class="menu__link" href="about.html"><span class="menu__num">02</span>Про мене</a></li>
+    <li class="menu__item"><a class="menu__link" href="music.html"><span class="menu__num">03</span>Музика</a></li>
+    <li class="menu__item"><a class="menu__link" href="live.html"><span class="menu__num">04</span>Виступи</a></li>
+    <li class="menu__item"><a class="menu__link" href="press.html"><span class="menu__num">05</span>Медіа</a></li>
+  </ul>
+  <div class="menu__foot">
+    <div class="social">
+      <a data-link="instagram" href="#" aria-label="Instagram" target="_blank" rel="noopener"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.25"><use href="#i-instagram"/></svg></a>
+      <a data-link="youtube" href="#" aria-label="YouTube" target="_blank" rel="noopener"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.25"><use href="#i-youtube"/></svg></a>
+      <a data-link="facebook" href="#" aria-label="Facebook" target="_blank" rel="noopener"><svg aria-hidden="true" fill="currentColor"><use href="#i-facebook"/></svg></a>
+      <a data-link="spotify" href="#" aria-label="Spotify" target="_blank" rel="noopener"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.25"><use href="#i-spotify"/></svg></a>
     </div>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ===================================================================
+     Hero
+     =================================================================== -->
+<section class="hero" data-hero>
+  <div class="hero__media" data-hero-media>
+    <picture>
+      <source type="image/webp" sizes="100vw"
+        srcset="assets/img/hero-velvet-640.webp 640w, assets/img/hero-velvet-1280.webp 1280w, assets/img/hero-velvet-1920.webp 1920w">
+      <img src="assets/img/hero-velvet-1280.jpg" sizes="100vw"
+        srcset="assets/img/hero-velvet-640.jpg 640w, assets/img/hero-velvet-1280.jpg 1280w, assets/img/hero-velvet-1920.jpg 1920w"
+        width="1032" height="1280" fetchpriority="high" decoding="async"
+        alt="Альона Юдицька із золотим мікрофоном на тлі синьої оксамитової куліси">
+    </picture>
+  </div>
+  <div class="hero__scrim"></div>
+  <div class="hero__spot" data-spotlight aria-hidden="true"></div>
+
+  <div class="hero__content" data-hero-content>
+    <p class="eyebrow" data-hero-rise>Українська співачка · Чернігів</p>
+
+    <h1 class="hero__title" data-hero-rise>
+      YUDYTSKA
+      <em>Альона Юдицька</em>
+    </h1>
+
+    <p class="lead hero__lead" data-hero-rise>
+      Живий вокал, власні пісні та ексклюзивний формат 2&nbsp;в&nbsp;1 із саксофоном.
+      Незалежний проєкт, який будується без продюсерів і великих бюджетів.
+    </p>
+
+    <div class="btn-row" data-hero-rise>
+      <a class="btn" href="music.html" data-magnetic="0.25">
+        Слухати музику
+        <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="btn btn--ghost" href="live.html" data-magnetic="0.25">Замовити виступ</a>
+    </div>
+
+    <div class="hero__foot" data-hero-rise>
+      <span class="scroll-cue"><i></i> Гортайте</span>
+      <div class="social">
+        <a data-link="instagram" href="#" aria-label="Instagram" target="_blank" rel="noopener"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.25"><use href="#i-instagram"/></svg></a>
+        <a data-link="youtube" href="#" aria-label="YouTube" target="_blank" rel="noopener"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.25"><use href="#i-youtube"/></svg></a>
+        <a data-link="spotify" href="#" aria-label="Spotify" target="_blank" rel="noopener"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.25"><use href="#i-spotify"/></svg></a>
+        <a data-link="facebook" href="#" aria-label="Facebook" target="_blank" rel="noopener"><svg aria-hidden="true" fill="currentColor"><use href="#i-facebook"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================================
+     Manifesto
+     =================================================================== -->
+<section class="section manifesto">
+  <div class="shell-sm">
+    <p class="eyebrow" data-reveal>Кредо</p>
+    <p class="manifesto__text" data-split>
+      Незалежний проєкт, який я будую самостійно. Без продюсера, без великих бюджетів — тільки голос, власні пісні й люди, які слухають.
+    </p>
+  </div>
+</section>
+
+<!-- ===================================================================
+     Numbers
+     =================================================================== -->
+<section class="stats" aria-label="Ключові цифри">
+  <div class="stat">
+    <span class="stat__num"><span data-count="57">57</span>&nbsp;000<sup>+</sup></span>
+    <span class="stat__label">слухачів онлайн</span>
+  </div>
+  <div class="stat">
+    <span class="stat__num"><span data-count="17">17</span></span>
+    <span class="stat__label">років у Чернігові</span>
+  </div>
+  <div class="stat">
+    <span class="stat__num"><span data-count="4">4</span></span>
+    <span class="stat__label">роки live-етерів</span>
+  </div>
+  <div class="stat">
+    <span class="stat__num"><span data-count="3">3</span></span>
+    <span class="stat__label">авторські сингли</span>
+  </div>
+</section>
+
+<!-- ===================================================================
+     What she does
+     =================================================================== -->
+<section class="section">
+  <div class="shell">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow" data-reveal>Напрями</p>
+        <h2 class="sec-head__title" data-split>Ось, що я роблю</h2>
+      </div>
+      <p class="lead sec-head__aside" data-reveal="0.1">
+        Чотири напрями, які тримають проєкт: сцена, власна музика, спільнота й дорога.
+      </p>
+    </div>
+
+    <div class="cards">
+      <article class="card" data-reveal>
+        <p class="card__n">01</p>
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" aria-hidden="true"><use href="#i-mic"/></svg></div>
+        <h3 class="card__title">Виступаю на івентах</h3>
+        <p class="card__text">
+          Створюю якісну музичну атмосферу на івентах будь-якого масштабу. Окрім сольного виступу,
+          пропоную ексклюзивний формат <b>2 в 1</b>: живий проникливий вокал у поєднанні з благородним
+          звучанням саксофону. Це подвійне враження, неймовірний візуальний ефект і повне занурення
+          слухачів у живий звук.
+        </p>
+      </article>
+
+      <article class="card" data-reveal="0.08">
+        <p class="card__n">02</p>
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" aria-hidden="true"><use href="#i-disc"/></svg></div>
+        <h3 class="card__title">Створюю авторську музику</h3>
+        <p class="card__text">
+          Пишу та реалізую власні пісні. У доробку авторські Pop та R&amp;B сингли: «Де ти», особлива
+          пісня мого весілля «Раз у житті», а також новий масштабний реліз з офіційним професійним
+          кліпом «Ідеальні вони», який знімався в Києві. Це чесна відверта музика про справжні почуття.
+        </p>
+      </article>
+
+      <article class="card" data-reveal="0.16">
+        <p class="card__n">03</p>
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" aria-hidden="true"><use href="#i-broadcast"/></svg></div>
+        <h3 class="card__title">Надихаю спільноту</h3>
+        <p class="card__text">
+          Понад 4 роки проведення музичних live-етерів на міжнародній платформі, де проєкт підтримують
+          понад 57 тисяч людей з усього світу. Це про живе спілкування та атмосферні онлайн-концерти.
+          Також транслюю всі свої реальні виступи в закладах рідного міста й об'єдную людей через музику.
+        </p>
+      </article>
+
+      <article class="card" data-reveal="0.24">
+        <p class="card__n">04</p>
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" aria-hidden="true"><use href="#i-map"/></svg></div>
+        <h3 class="card__title">Виїжджаю по Україні</h3>
+        <p class="card__text">
+          Базуюся в Чернігові, але ми завжди відкриті до співпраці та виступів дуетом у будь-якому місті
+          або селищі України. Для замовлення виступу чи обговорення деталей зв'яжіться зі мною зручним
+          для вас способом — у дірект Instagram або Facebook.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================================
+     Release teaser
+     =================================================================== -->
+<section class="section">
+  <div class="shell">
+    <div class="release">
+      <div class="release__art" data-reveal>
+        <a class="release__card" href="music.html" data-tilt="8" aria-label="Перейти до сторінки релізу «Ідеальні вони»">
+          <span class="release__badge">Новий реліз</span>
+          <figure class="fig" style="--tone:#5D5C64">
+            <picture>
+              <source type="image/webp" sizes="(max-width: 880px) 92vw, 40vw"
+                srcset="assets/img/cover-idealni-vony-640.webp 640w, assets/img/cover-idealni-vony-1280.webp 1280w">
+              <img src="assets/img/cover-idealni-vony-1280.jpg" sizes="(max-width: 880px) 92vw, 40vw"
+                srcset="assets/img/cover-idealni-vony-640.jpg 640w, assets/img/cover-idealni-vony-1280.jpg 1280w"
+                width="1280" height="1280" loading="lazy" decoding="async"
+                alt="Обкладинка синглу YUDYTSKA «Ідеальні вони»">
+            </picture>
+          </figure>
+        </a>
+      </div>
+
+      <div>
+        <p class="eyebrow" data-reveal>Головний реліз</p>
+        <h2 class="release__title" data-split>Ідеальні вони</h2>
+        <div class="release__meta" data-reveal>
+          <span>2026</span><span>Pop / R&amp;B</span><span>Офіційний кліп</span>
+        </div>
+        <p class="lead" data-reveal="0.08">
+          Чуттєва історія про ті моменти в стосунках, коли стає забагато шумних слів та гордості.
+          Нагадування про те, як важливо вчасно зупинитися, відкинути образи та повернути справжню щирість.
+        </p>
+        <div class="btn-row" data-reveal="0.16" style="margin-top:var(--sp-4)">
+          <a class="btn" href="music.html" data-magnetic="0.25">Дивитися кліп</a>
+          <a class="btn btn--ghost" data-link="spotify" href="#" target="_blank" rel="noopener" data-magnetic="0.25">Слухати на Spotify</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================================
+     Gallery preview
+     =================================================================== -->
+<section class="section">
+  <div class="shell">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow" data-reveal>Зі сцени</p>
+        <h2 class="sec-head__title" data-split>Живий звук і живі емоції</h2>
+      </div>
+      <a class="link-arrow" href="live.html">
+        Уся галерея
+        <svg viewBox="0 0 24 12" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M0 6h22M16 1l6 5-6 5"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="shell">
+    <div class="strip">
+      <figure class="fig fig--tall" style="--tone:#414848" data-reveal>
+        <picture>
+          <source type="image/webp" sizes="(max-width: 700px) 72vw, 22vw" srcset="assets/img/live-terrace-640.webp 640w, assets/img/live-terrace-1280.webp 1280w">
+          <img src="assets/img/live-terrace-640.jpg" width="816" height="1280" loading="lazy" decoding="async" alt="Виступ на літній терасі в Чернігові">
+        </picture>
+      </figure>
+      <figure class="fig fig--tall" style="--tone:#6B5547" data-reveal="0.06">
+        <picture>
+          <source type="image/webp" sizes="(max-width: 700px) 72vw, 22vw" srcset="assets/img/duo-black-gold-640.webp 640w, assets/img/duo-black-gold-1280.webp 1280w">
+          <img src="assets/img/duo-black-gold-640.jpg" width="923" height="1280" loading="lazy" decoding="async" alt="Дует із саксофоністом у вечірньому образі">
+        </picture>
+      </figure>
+      <figure class="fig fig--tall" style="--tone:#565553" data-reveal="0.12">
+        <picture>
+          <source type="image/webp" sizes="(max-width: 700px) 72vw, 22vw" srcset="assets/img/live-pink-640.webp 640w, assets/img/live-pink-1280.webp 1280w">
+          <img src="assets/img/live-pink-640.jpg" width="960" height="1280" loading="lazy" decoding="async" alt="Live-сет просто неба">
+        </picture>
+      </figure>
+      <figure class="fig fig--tall" style="--tone:#978A79" data-reveal="0.18">
+        <picture>
+          <source type="image/webp" sizes="(max-width: 700px) 72vw, 22vw" srcset="assets/img/live-gold-dress-640.webp 640w, assets/img/live-gold-dress-1280.webp 1280w">
+          <img src="assets/img/live-gold-dress-640.jpg" width="960" height="1280" loading="lazy" decoding="async" alt="Вечірня програма, виступ біля води">
+        </picture>
+      </figure>
+      <figure class="fig fig--tall" style="--tone:#8B8780" data-reveal="0.24">
+        <picture>
+          <source type="image/webp" sizes="(max-width: 700px) 72vw, 22vw" srcset="assets/img/editorial-leather-640.webp 640w, assets/img/editorial-leather-1280.webp 1280w">
+          <img src="assets/img/editorial-leather-640.jpg" width="962" height="1280" loading="lazy" decoding="async" alt="Портретна зйомка в чорній шкіряній куртці">
+        </picture>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================================
+     Press marquee
+     =================================================================== -->
+<section class="marquee" data-marquee="34" aria-label="Про YUDYTSKA пишуть">
+  <div class="marquee__track" data-marquee-track>
+    <span class="marquee__item">Музична Ліга</span>
+    <span class="marquee__item">Рідний Київ</span>
+    <span class="marquee__item">Акценти</span>
+    <span class="marquee__item">Радіо Фреш Україна</span>
+    <span class="marquee__item">Love Ukraine Radio</span>
+    <span class="marquee__item">Politeka</span>
+  </div>
+</section>
+
+<!-- ===================================================================
+     CTA
+     =================================================================== -->
+<section class="section cta">
+  <div class="shell-sm">
+    <p class="eyebrow" data-reveal style="justify-content:center">Запросити на подію</p>
+    <h2 class="cta__title" data-split>Подаруємо вашим гостям живі емоції</h2>
+    <p class="lead cta__lead" data-reveal="0.08">
+      Сольна програма або формат 2&nbsp;в&nbsp;1 із саксофоном — у Чернігові та будь-де в Україні.
+    </p>
+    <div class="btn-row" data-reveal="0.16">
+      <a class="btn" data-link="instagram" href="#" target="_blank" rel="noopener" data-magnetic="0.3">Написати в Instagram</a>
+      <a class="btn btn--ghost" data-link="email" href="#" data-magnetic="0.3">Написати на пошту</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================================================================
+     Footer
+     =================================================================== -->
+<footer class="footer">
+  <div class="shell">
+    <div class="footer__grid">
+      <div>
+        <p class="footer__mark">YUDYTSKA</p>
+        <p class="lead" style="margin-top:var(--sp-2)">
+          Українська співачка. Живий вокал, авторські пісні, формат 2&nbsp;в&nbsp;1 із саксофоном.
+        </p>
+        <div class="social" style="margin-top:var(--sp-3)">
+          <a data-link="instagram" href="#" aria-label="Instagram" target="_blank" rel="noopener"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.25"><use href="#i-instagram"/></svg></a>
+          <a data-link="youtube" href="#" aria-label="YouTube" target="_blank" rel="noopener"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.25"><use href="#i-youtube"/></svg></a>
+          <a data-link="facebook" href="#" aria-label="Facebook" target="_blank" rel="noopener"><svg aria-hidden="true" fill="currentColor"><use href="#i-facebook"/></svg></a>
+          <a data-link="spotify" href="#" aria-label="Spotify" target="_blank" rel="noopener"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.25"><use href="#i-spotify"/></svg></a>
+          <a data-link="telegram" href="#" aria-label="Telegram" target="_blank" rel="noopener"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round"><use href="#i-telegram"/></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <p class="footer__title">Розділи</p>
+        <div class="footer__list">
+          <a href="index.html">Головна</a>
+          <a href="about.html">Про мене</a>
+          <a href="music.html">Музика</a>
+          <a href="live.html">Виступи</a>
+          <a href="press.html">Медіа</a>
+        </div>
+      </div>
+
+      <div>
+        <p class="footer__title">Контакти</p>
+        <div class="footer__list">
+          <span>Чернігів, Україна</span>
+          <span>Виступи по всій Україні</span>
+          <a data-link="email" href="#" data-email-text>yudytska.music@gmail.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> YUDYTSKA. Усі права захищені.</span>
+      <span>Чернігів · Україна</span>
+    </div>
+  </div>
 </footer>
 
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.parallax.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/magnific-popup-options.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/custom.js"></script>
+<div class="grain" aria-hidden="true" style="--grain-src:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E&quot;)"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+<script type="module" src="assets/js/main.js"></script>
 
 </body>
 </html>

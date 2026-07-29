@@ -1,0 +1,7 @@
+.DS_Store
+**/.DS_Store
+.idea/
+
+# Original photographs (~40 MB, HEIC/oversized).
+# Only the optimised derivatives in assets/img/ are deployed.
+new/
