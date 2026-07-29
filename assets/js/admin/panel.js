@@ -564,7 +564,7 @@ function build() {
     </header>
 
     <div class="ap-main">
-      <nav class="ap-nav" aria-label="Розділи панелі"></nav>
+      <nav class="ap-nav" aria-label="Розділи панелі" data-lenis-prevent></nav>
       <div class="ap-content">
         <div class="ap-search">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
@@ -572,7 +572,7 @@ function build() {
           </svg>
           <input type="search" data-search placeholder="Пошук по полях…" aria-label="Пошук по полях">
         </div>
-        <div class="ap-body"></div>
+        <div class="ap-body" data-lenis-prevent></div>
       </div>
     </div>
 
