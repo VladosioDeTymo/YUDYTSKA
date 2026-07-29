@@ -156,7 +156,13 @@ function initLightbox() {
     box.hidden = false;
     document.body.classList.add('is-locked');
     show(i);
-    requestAnimationFrame(() => box.classList.add('is-open'));
+
+    // Flush styles so the fade has a start value, then reveal synchronously.
+    // A requestAnimationFrame here can be throttled or dropped, which would
+    // leave the dialog open but fully transparent and still trapping focus.
+    void box.offsetWidth;
+    box.classList.add('is-open');
+
     closeBtn.focus({ preventScroll: true });
   };
 

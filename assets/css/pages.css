@@ -838,9 +838,17 @@ a.contact__value:hover { color: var(--gold-soft); }
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   opacity: 0;
+  /* Without this the closed overlay still covers the viewport and eats every
+     click on the page underneath. */
+  pointer-events: none;
   transition: opacity var(--dur-base) var(--ease-out);
 }
-.lightbox.is-open { opacity: 1; }
+
+/* `display: grid` above is a class selector, so it beats the user-agent
+   `[hidden] { display: none }`. The attribute has to be honoured explicitly. */
+.lightbox[hidden] { display: none; }
+
+.lightbox.is-open { opacity: 1; pointer-events: auto; }
 
 .lightbox__stage {
   max-width: min(100%, 60rem);
