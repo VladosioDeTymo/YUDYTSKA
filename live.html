@@ -85,12 +85,12 @@
 
 <main id="main">
 
-<section class="page-head">
+<section class="page-head" data-edit-section="Виступи">
   <div class="page-head__glow" aria-hidden="true"></div>
   <div class="page-head__inner">
-    <p class="eyebrow" data-reveal>Виступи</p>
-    <h1 class="page-head__title" data-split>Живі емоції на вашій події</h1>
-    <p class="lead" data-reveal="0.1">
+    <p class="eyebrow" data-reveal data-edit="live.vystupy.eyebrow" data-edit-label="Надзаголовок">Виступи</p>
+    <h1 class="page-head__title" data-split data-edit="live.vystupy.title" data-edit-label="Заголовок сторінки">Живі емоції на вашій події</h1>
+    <p class="lead" data-reveal="0.1" data-edit="live.vystupy.lead" data-edit-label="Опис">
       Створюю якісну музичну атмосферу на івентах будь-якого масштабу — у Чернігові
       та будь-де в Україні.
     </p>
@@ -100,31 +100,31 @@
 <!-- ===================================================================
      2 in 1
      =================================================================== -->
-<section class="section" style="padding-top:0" data-panels>
+<section class="section" style="padding-top:0" data-panels data-edit-section="Ексклюзивний формат">
   <div class="shell">
     <div class="duo-claim">
-      <p class="eyebrow" data-reveal style="justify-content:center">Ексклюзивний формат</p>
-      <p class="duo-claim__mark" data-reveal="0.06">2 в 1</p>
-      <p class="lead" data-reveal="0.12" style="margin-inline:auto;text-align:center">
+      <p class="eyebrow" data-reveal style="justify-content:center" data-edit="live.ekskliuzyvnyy-format.eyebrow" data-edit-label="Надзаголовок">Ексклюзивний формат</p>
+      <p class="duo-claim__mark" data-reveal="0.06" data-edit="live.ekskliuzyvnyy-format.claim" data-edit-label="Великий напис">2 в 1</p>
+      <p class="lead" data-reveal="0.12" style="margin-inline:auto;text-align:center" data-edit="live.ekskliuzyvnyy-format.lead" data-edit-label="Опис">
         Живий проникливий вокал у поєднанні з благородним звучанням саксофону. Подвійне
         враження, неймовірний візуальний ефект і повне занурення слухачів у живий звук.
       </p>
     </div>
 
     <div class="panels">
-      <figure class="fig fig--tall" style="--tone:#6B5547" data-panel-left>
+      <figure class="fig fig--tall" style="--tone:#6B5547" data-panel-left data-edit-img="duo-black-gold" data-edit-label="Альона Юдицька та саксофоніст у вечірніх образах">
         <picture>
           <source type="image/webp" sizes="(max-width: 760px) 92vw, 46vw" srcset="assets/img/duo-black-gold-640.webp 640w, assets/img/duo-black-gold-1280.webp 1280w">
           <img src="assets/img/duo-black-gold-1280.jpg" width="923" height="1280" loading="lazy" decoding="async" alt="Альона Юдицька та саксофоніст у вечірніх образах">
         </picture>
-        <figcaption>Вечірня програма — вокал і тенор-саксофон</figcaption>
+        <figcaption data-edit="live.ekskliuzyvnyy-format.caption" data-edit-label="Підпис фото">Вечірня програма — вокал і тенор-саксофон</figcaption>
       </figure>
-      <figure class="fig fig--tall" style="--tone:#8A817F" data-panel-right>
+      <figure class="fig fig--tall" style="--tone:#8A817F" data-panel-right data-edit-img="duo-daylight" data-edit-label="Дует із саксофоністом на денному івенті у світлій залі">
         <picture>
           <source type="image/webp" sizes="(max-width: 760px) 92vw, 46vw" srcset="assets/img/duo-daylight-640.webp 640w, assets/img/duo-daylight-1280.webp 1280w">
           <img src="assets/img/duo-daylight-1280.jpg" width="960" height="1280" loading="lazy" decoding="async" alt="Дует із саксофоністом на денному івенті у світлій залі">
         </picture>
-        <figcaption>Денні церемонії та урочистості</figcaption>
+        <figcaption data-edit="live.ekskliuzyvnyy-format.caption2" data-edit-label="Підпис фото">Денні церемонії та урочистості</figcaption>
       </figure>
     </div>
 
@@ -132,22 +132,22 @@
       <div class="tile" data-reveal>
         <span class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" aria-hidden="true"><use href="#i-mic"/></svg></span>
         <span>
-          <span class="tile__name">Сольна програма</span><br>
-          <span class="tile__note">Живий вокал під якісний мінус, підбір репертуару під подію.</span>
+          <span class="tile__name" data-edit="live..tile-name" data-edit-label="Назва плитки">Сольна програма</span><br>
+          <span class="tile__note" data-edit="live..tile-note" data-edit-label="Опис плитки">Живий вокал під якісний мінус, підбір репертуару під подію.</span>
         </span>
       </div>
       <div class="tile" data-reveal="0.06">
         <span class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" aria-hidden="true"><use href="#i-sax"/></svg></span>
         <span>
-          <span class="tile__name">Дует із саксофоном</span><br>
-          <span class="tile__note">Формат 2 в 1: вокал і живий саксофон на одній сцені.</span>
+          <span class="tile__name" data-edit="live..tile-name2" data-edit-label="Назва плитки">Дует із саксофоном</span><br>
+          <span class="tile__note" data-edit="live..tile-note2" data-edit-label="Опис плитки">Формат 2 в 1: вокал і живий саксофон на одній сцені.</span>
         </span>
       </div>
       <div class="tile" data-reveal="0.12">
         <span class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" aria-hidden="true"><use href="#i-map"/></svg></span>
         <span>
-          <span class="tile__name">Уся Україна</span><br>
-          <span class="tile__note">База в Чернігові, виїзд у будь-яке місто або селище.</span>
+          <span class="tile__name" data-edit="live..tile-name3" data-edit-label="Назва плитки">Уся Україна</span><br>
+          <span class="tile__note" data-edit="live..tile-note3" data-edit-label="Опис плитки">База в Чернігові, виїзд у будь-яке місто або селище.</span>
         </span>
       </div>
     </div>
@@ -157,14 +157,14 @@
 <!-- ===================================================================
      Horizontal gallery
      =================================================================== -->
-<section class="section" style="padding-bottom:0">
+<section class="section" style="padding-bottom:0" data-edit-section="Галерея">
   <div class="shell">
     <div class="sec-head">
       <div>
-        <p class="eyebrow" data-reveal>Галерея</p>
-        <h2 class="sec-head__title" data-split>Зі сцени</h2>
+        <p class="eyebrow" data-reveal data-edit="live.halereia.eyebrow" data-edit-label="Надзаголовок">Галерея</p>
+        <h2 class="sec-head__title" data-split data-edit="live.halereia.title" data-edit-label="Заголовок секції">Зі сцени</h2>
       </div>
-      <p class="lead sec-head__aside" data-reveal="0.1">
+      <p class="lead sec-head__aside" data-reveal="0.1" data-edit="live.halereia.aside" data-edit-label="Опис секції">
         Тераси, зали, дахи й камерні вечори. Натисніть на фото, щоб відкрити його більшим.
       </p>
     </div>
@@ -173,7 +173,7 @@
   <div class="horizontal" data-horizontal>
     <div class="horizontal__track" data-horizontal-track>
       <figure class="h-card" data-horizontal-card>
-        <div class="fig fig--tall fig--zoom" data-lightbox="assets/img/live-terrace-1280.jpg" data-caption="Літня тераса, Чернігів" style="--tone:#414848" role="button" tabindex="0">
+        <div class="fig fig--tall fig--zoom" data-lightbox="assets/img/live-terrace-1280.jpg" data-caption="Літня тераса, Чернігів" style="--tone:#414848" role="button" tabindex="0" data-edit-img="live-terrace" data-edit-label="Виступ на літній терасі в Чернігові">
           <picture>
             <source type="image/webp" sizes="(max-width: 900px) 72vw, 25rem" srcset="assets/img/live-terrace-640.webp 640w, assets/img/live-terrace-1280.webp 1280w">
             <img src="assets/img/live-terrace-640.jpg" width="816" height="1280" loading="lazy" decoding="async" alt="Виступ на літній терасі в Чернігові">
@@ -183,7 +183,7 @@
       </figure>
 
       <figure class="h-card" data-horizontal-card>
-        <div class="fig fig--tall fig--zoom" data-lightbox="assets/img/live-pink-1280.jpg" data-caption="Live-сет просто неба" style="--tone:#565553" role="button" tabindex="0">
+        <div class="fig fig--tall fig--zoom" data-lightbox="assets/img/live-pink-1280.jpg" data-caption="Live-сет просто неба" style="--tone:#565553" role="button" tabindex="0" data-edit-img="live-pink" data-edit-label="Live-сет просто неба">
           <picture>
             <source type="image/webp" sizes="(max-width: 900px) 72vw, 25rem" srcset="assets/img/live-pink-640.webp 640w, assets/img/live-pink-1280.webp 1280w">
             <img src="assets/img/live-pink-640.jpg" width="960" height="1280" loading="lazy" decoding="async" alt="Live-сет просто неба">
@@ -193,7 +193,7 @@
       </figure>
 
       <figure class="h-card" data-horizontal-card>
-        <div class="fig fig--tall fig--zoom" data-lightbox="assets/img/live-rooftop-1280.jpg" data-caption="Rooftop-виступ із саксофоном" style="--tone:#727477" role="button" tabindex="0">
+        <div class="fig fig--tall fig--zoom" data-lightbox="assets/img/live-rooftop-1280.jpg" data-caption="Rooftop-виступ із саксофоном" style="--tone:#727477" role="button" tabindex="0" data-edit-img="live-rooftop" data-edit-label="Виступ на даху з саксофоном поруч">
           <picture>
             <source type="image/webp" sizes="(max-width: 900px) 72vw, 25rem" srcset="assets/img/live-rooftop-640.webp 640w, assets/img/live-rooftop-1280.webp 1280w">
             <img src="assets/img/live-rooftop-640.jpg" width="699" height="1280" loading="lazy" decoding="async" alt="Виступ на даху з саксофоном поруч">
@@ -203,7 +203,7 @@
       </figure>
 
       <figure class="h-card" data-horizontal-card>
-        <div class="fig fig--tall fig--zoom" data-lightbox="assets/img/live-gold-dress-1280.jpg" data-caption="Вечірня програма" style="--tone:#978A79" role="button" tabindex="0">
+        <div class="fig fig--tall fig--zoom" data-lightbox="assets/img/live-gold-dress-1280.jpg" data-caption="Вечірня програма" style="--tone:#978A79" role="button" tabindex="0" data-edit-img="live-gold-dress" data-edit-label="Вечірня програма біля води">
           <picture>
             <source type="image/webp" sizes="(max-width: 900px) 72vw, 25rem" srcset="assets/img/live-gold-dress-640.webp 640w, assets/img/live-gold-dress-1280.webp 1280w">
             <img src="assets/img/live-gold-dress-640.jpg" width="960" height="1280" loading="lazy" decoding="async" alt="Вечірня програма біля води">
@@ -213,7 +213,7 @@
       </figure>
 
       <figure class="h-card" data-horizontal-card>
-        <div class="fig fig--tall fig--zoom" data-lightbox="assets/img/live-piano-1280.jpg" data-caption="Камерний формат біля роялю" style="--tone:#68644F" role="button" tabindex="0">
+        <div class="fig fig--tall fig--zoom" data-lightbox="assets/img/live-piano-1280.jpg" data-caption="Камерний формат біля роялю" style="--tone:#68644F" role="button" tabindex="0" data-edit-img="live-piano" data-edit-label="Камерний виступ біля роялю">
           <picture>
             <source type="image/webp" sizes="(max-width: 900px) 72vw, 25rem" srcset="assets/img/live-piano-640.webp 640w, assets/img/live-piano-1280.webp 1280w">
             <img src="assets/img/live-piano-640.jpg" width="960" height="1280" loading="lazy" decoding="async" alt="Камерний виступ біля роялю">
@@ -223,7 +223,7 @@
       </figure>
 
       <figure class="h-card" data-horizontal-card>
-        <div class="fig fig--tall fig--zoom" data-lightbox="assets/img/duo-hall-1280.jpg" data-caption="Дует у святковій залі" style="--tone:#5E5051" role="button" tabindex="0">
+        <div class="fig fig--tall fig--zoom" data-lightbox="assets/img/duo-hall-1280.jpg" data-caption="Дует у святковій залі" style="--tone:#5E5051" role="button" tabindex="0" data-edit-img="duo-hall" data-edit-label="Дует із саксофоністом у святковій залі">
           <picture>
             <source type="image/webp" sizes="(max-width: 900px) 72vw, 25rem" srcset="assets/img/duo-hall-640.webp 640w, assets/img/duo-hall-1280.webp 1280w">
             <img src="assets/img/duo-hall-640.jpg" width="1024" height="1280" loading="lazy" decoding="async" alt="Дует із саксофоністом у святковій залі">
@@ -238,14 +238,14 @@
 <!-- ===================================================================
      Booking
      =================================================================== -->
-<section class="section">
+<section class="section" data-edit-section="Замовлення">
   <div class="shell">
     <div class="sec-head">
       <div>
-        <p class="eyebrow" data-reveal>Замовлення</p>
-        <h2 class="sec-head__title" data-split>Напишіть мені</h2>
+        <p class="eyebrow" data-reveal data-edit="live.zamovlennia.eyebrow" data-edit-label="Надзаголовок">Замовлення</p>
+        <h2 class="sec-head__title" data-split data-edit="live.zamovlennia.title" data-edit-label="Заголовок секції">Напишіть мені</h2>
       </div>
-      <p class="lead sec-head__aside" data-reveal="0.1">
+      <p class="lead sec-head__aside" data-reveal="0.1" data-edit="live.zamovlennia.aside" data-edit-label="Опис секції">
         Для замовлення виступу чи обговорення деталей зв'яжіться зручним для вас способом —
         відповідаю особисто.
       </p>
@@ -255,44 +255,44 @@
       <a class="book-btn" data-link="instagram" href="#" target="_blank" rel="noopener" data-reveal data-magnetic="0.12">
         <span class="book-btn__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" aria-hidden="true"><use href="#i-instagram"/></svg></span>
         <span>
-          <span class="book-btn__name">Instagram</span><br>
-          <span class="book-btn__note">Написати в дірект — найшвидший спосіб</span>
+          <span class="book-btn__name" data-edit="live..book-name" data-edit-label="Назва способу зв'язку">Instagram</span><br>
+          <span class="book-btn__note" data-edit="live..book-note" data-edit-label="Опис способу зв'язку">Написати в дірект — найшвидший спосіб</span>
         </span>
       </a>
       <a class="book-btn" data-link="facebook" href="#" target="_blank" rel="noopener" data-reveal="0.06" data-magnetic="0.12">
         <span class="book-btn__icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-facebook"/></svg></span>
         <span>
-          <span class="book-btn__name">Facebook</span><br>
-          <span class="book-btn__note">Повідомлення на сторінку</span>
+          <span class="book-btn__name" data-edit="live..book-name2" data-edit-label="Назва способу зв'язку">Facebook</span><br>
+          <span class="book-btn__note" data-edit="live..book-note2" data-edit-label="Опис способу зв'язку">Повідомлення на сторінку</span>
         </span>
       </a>
       <a class="book-btn" data-link="telegram" href="#" target="_blank" rel="noopener" data-reveal="0.12" data-magnetic="0.12">
         <span class="book-btn__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round" aria-hidden="true"><use href="#i-telegram"/></svg></span>
         <span>
-          <span class="book-btn__name">Telegram</span><br>
-          <span class="book-btn__note">Для швидкого узгодження деталей</span>
+          <span class="book-btn__name" data-edit="live..book-name3" data-edit-label="Назва способу зв'язку">Telegram</span><br>
+          <span class="book-btn__note" data-edit="live..book-note3" data-edit-label="Опис способу зв'язку">Для швидкого узгодження деталей</span>
         </span>
       </a>
       <a class="book-btn" data-link="email" href="#" data-reveal="0.18" data-magnetic="0.12">
         <span class="book-btn__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" aria-hidden="true"><use href="#i-mail"/></svg></span>
         <span>
-          <span class="book-btn__name">Пошта</span><br>
-          <span class="book-btn__note" data-email-text>yudytska.music@gmail.com</span>
+          <span class="book-btn__name" data-edit="live..book-name4" data-edit-label="Назва способу зв'язку">Пошта</span><br>
+          <span class="book-btn__note" data-email-text data-edit="live..book-note4" data-edit-label="Опис способу зв'язку">yudytska.music@gmail.com</span>
         </span>
       </a>
     </div>
 
     <div class="contact" style="margin-top:var(--sp-4)" data-reveal>
       <div>
-        <p class="contact__label">Локація</p>
-        <p class="contact__value">Чернігів, Україна</p>
-        <p class="lead" style="margin-top:var(--sp-2)">
+        <p class="contact__label" data-edit="live.zamovlennia.contact-label" data-edit-label="Підпис контакту">Локація</p>
+        <p class="contact__value" data-edit="live.zamovlennia.contact" data-edit-label="Контакт">Чернігів, Україна</p>
+        <p class="lead" style="margin-top:var(--sp-2)" data-edit="live.zamovlennia.lead" data-edit-label="Опис">
           Базуюся в Чернігові, але завжди відкрита до співпраці та виступів дуетом
           у будь-якому місті або селищі України.
         </p>
       </div>
       <div>
-        <p class="contact__label">Пошта</p>
+        <p class="contact__label" data-edit="live.zamovlennia.contact-label2" data-edit-label="Підпис контакту">Пошта</p>
         <a class="contact__value" data-link="email" href="#" data-email-text>yudytska.music@gmail.com</a>
       </div>
     </div>
@@ -301,12 +301,12 @@
 
 </main>
 
-<footer class="footer">
+<footer class="footer" data-edit-section="Футер">
   <div class="shell">
     <div class="footer__grid">
       <div>
         <p class="footer__mark">YUDYTSKA</p>
-        <p class="lead" style="margin-top:var(--sp-2)">
+        <p class="lead" style="margin-top:var(--sp-2)" data-edit="live.futer.lead" data-edit-label="Опис">
           Українська співачка. Живий вокал, авторські пісні, формат 2&nbsp;в&nbsp;1 із саксофоном.
         </p>
         <div class="social" style="margin-top:var(--sp-3)">
@@ -318,7 +318,7 @@
         </div>
       </div>
       <div>
-        <p class="footer__title">Розділи</p>
+        <p class="footer__title" data-edit="live.futer.footer-title" data-edit-label="Заголовок у футері">Розділи</p>
         <div class="footer__list">
           <a href="index.html">Головна</a>
           <a href="about.html">Про мене</a>
@@ -328,7 +328,7 @@
         </div>
       </div>
       <div>
-        <p class="footer__title">Контакти</p>
+        <p class="footer__title" data-edit="live.futer.footer-title2" data-edit-label="Заголовок у футері">Контакти</p>
         <div class="footer__list">
           <span>Чернігів, Україна</span>
           <span>Виступи по всій Україні</span>
@@ -339,6 +339,13 @@
     <div class="footer__bottom">
       <span>© <span data-year>2026</span> YUDYTSKA. Усі права захищені.</span>
       <span>Чернігів · Україна</span>
+      <button class="admin-open" type="button" data-admin-open
+              aria-label="Редагувати сайт" title="Редагувати сайт">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+          <circle cx="12" cy="12" r="3.2"/>
+          <path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.88-.34 1.7 1.7 0 0 0-1 1.56V21a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 8.9 19.3a1.7 1.7 0 0 0-1.88.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.7 15a1.7 1.7 0 0 0-1.56-1H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.7 8.9a1.7 1.7 0 0 0-.34-1.88l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-1.56V3a2 2 0 1 1 4 0v.09a1.7 1.7 0 0 0 1 1.56 1.7 1.7 0 0 0 1.88-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9v.09a1.7 1.7 0 0 0 1.56 1H21a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.51 1z"/>
+        </svg>
+      </button>
     </div>
   </div>
 </footer>

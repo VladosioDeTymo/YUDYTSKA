@@ -84,12 +84,12 @@
 <!-- ===================================================================
      Head
      =================================================================== -->
-<section class="page-head">
+<section class="page-head" data-edit-section="Біографія">
   <div class="page-head__glow" aria-hidden="true"></div>
   <div class="page-head__inner">
-    <p class="eyebrow" data-reveal>Біографія</p>
-    <h1 class="page-head__title" data-split>Трішки про мене</h1>
-    <p class="lead" data-reveal="0.1">
+    <p class="eyebrow" data-reveal data-edit="about.biohrafiia.eyebrow" data-edit-label="Надзаголовок">Біографія</p>
+    <h1 class="page-head__title" data-split data-edit="about.biohrafiia.title" data-edit-label="Заголовок сторінки">Трішки про мене</h1>
+    <p class="lead" data-reveal="0.1" data-edit="about.biohrafiia.lead" data-edit-label="Опис">
       Від мальовничої Новгород-Сіверщини до сцен Мальдівів та Емiратів — і назад,
       до Чернігова, де все почалося по-справжньому.
     </p>
@@ -99,10 +99,10 @@
 <!-- ===================================================================
      Portrait + prose
      =================================================================== -->
-<section class="section" style="padding-top:0">
+<section class="section" style="padding-top:0" data-edit-section="Біографія — текст">
   <div class="shell">
     <div class="about-hero">
-      <figure class="fig fig--port" style="--tone:#414140">
+      <figure class="fig fig--port" style="--tone:#414140" data-edit-img="portrait-close" data-edit-label="Портрет Альони Юдицької крупним планом">
         <picture>
           <source type="image/webp" sizes="(max-width: 880px) 92vw, 44vw"
             srcset="assets/img/portrait-close-640.webp 640w, assets/img/portrait-close-1280.webp 1280w">
@@ -114,18 +114,18 @@
       </figure>
 
       <div class="prose">
-        <p class="first" data-reveal>
+        <p class="first" data-reveal data-edit="about.sektsiia.text" data-edit-label="Абзац">
           Привіт! Я — Альона Юдицька <b class="gold">(YUDYTSKA)</b>. Мій творчий шлях розпочався
           з мальовничої Новгород-Сіверщини, а понад 17 років моїм головним натхненням та домом
           є Чернігів. Саме тут сформувалася моя доросла музична історія, сповнена сценічного
           досвіду, відвертих текстів та локальної підтримки слухачів.
         </p>
-        <p data-reveal="0.06">
+        <p data-reveal="0.06" data-edit="about.sektsiia.text2" data-edit-label="Абзац">
           Я співаю з 1 класу школи, адже любов до музики завжди була невід'ємною частиною мого
           життя. Цей дар передався мені від бабусі, та й загалом увесь наш рід Юдицьких співочий
           і творчий, тому іншого шляху для мене бути й не могло.
         </p>
-        <p data-reveal="0.12">
+        <p data-reveal="0.12" data-edit="about.sektsiia.text3" data-edit-label="Абзац">
           Сьогодні YUDYTSKA — це повністю незалежний проєкт, який я будую самостійно. Я сама
           заробляю на свою творчість та реалізацію власних пісень завдяки виступам у рідному
           Чернігові та за його межами. Окрім сольної програми, активно співпрацюю в стильному
@@ -139,21 +139,21 @@
 <!-- ===================================================================
      Timeline
      =================================================================== -->
-<section class="section" style="padding-top:0">
+<section class="section" style="padding-top:0" data-edit-section="Шлях">
   <div class="shell-sm">
     <div class="sec-head">
       <div>
-        <p class="eyebrow" data-reveal>Шлях</p>
-        <h2 class="sec-head__title" data-split>Як усе складалося</h2>
+        <p class="eyebrow" data-reveal data-edit="about.shliakh.eyebrow" data-edit-label="Надзаголовок">Шлях</p>
+        <h2 class="sec-head__title" data-split data-edit="about.shliakh.title" data-edit-label="Заголовок секції">Як усе складалося</h2>
       </div>
     </div>
 
     <div class="timeline">
       <article class="tl-item" data-reveal>
-        <p class="tl-item__when">1 клас</p>
+        <p class="tl-item__when" data-edit="about.shliakh.text" data-edit-label="Абзац">1 клас</p>
         <div>
-          <h3 class="tl-item__title">Перші пісні</h3>
-          <p class="tl-item__text">
+          <h3 class="tl-item__title" data-edit="about.shliakh.step-title" data-edit-label="Назва етапу">Перші пісні</h3>
+          <p class="tl-item__text" data-edit="about.shliakh.step-text" data-edit-label="Текст етапу">
             Спів починається зі школи. Дар передався від бабусі — увесь рід Юдицьких співочий
             і творчий, тому іншого шляху бути й не могло.
           </p>
@@ -161,20 +161,20 @@
       </article>
 
       <article class="tl-item" data-reveal="0.06">
-        <p class="tl-item__when">Шкільні роки</p>
+        <p class="tl-item__when" data-edit="about.shliakh.text2" data-edit-label="Абзац">Шкільні роки</p>
         <div>
-          <h3 class="tl-item__title">Конкурси й перемоги</h3>
-          <p class="tl-item__text">
+          <h3 class="tl-item__title" data-edit="about.shliakh.step-title2" data-edit-label="Назва етапу">Конкурси й перемоги</h3>
+          <p class="tl-item__text" data-edit="about.shliakh.step-text2" data-edit-label="Текст етапу">
             З ранніх років — активні виступи на конкурсах і величезна стопка грамот та дипломів.
           </p>
         </div>
       </article>
 
       <article class="tl-item" data-reveal="0.12">
-        <p class="tl-item__when">З 18 років</p>
+        <p class="tl-item__when" data-edit="about.shliakh.text3" data-edit-label="Абзац">З 18 років</p>
         <div>
-          <h3 class="tl-item__title">Професійна міжнародна кар'єра</h3>
-          <p class="tl-item__text">
+          <h3 class="tl-item__title" data-edit="about.shliakh.step-title3" data-edit-label="Назва етапу">Професійна міжнародна кар'єра</h3>
+          <p class="tl-item__text" data-edit="about.shliakh.step-text3" data-edit-label="Текст етапу">
             Сольні контракти, робота в дуетах, тріо та бендах. Позаду — сцени кількох країн
             і роки щоденної роботи з голосом.
           </p>
@@ -189,10 +189,10 @@
       </article>
 
       <article class="tl-item" data-reveal="0.18">
-        <p class="tl-item__when">17+ років</p>
+        <p class="tl-item__when" data-edit="about.shliakh.text4" data-edit-label="Абзац">17+ років</p>
         <div>
-          <h3 class="tl-item__title">Чернігів</h3>
-          <p class="tl-item__text">
+          <h3 class="tl-item__title" data-edit="about.shliakh.step-title4" data-edit-label="Назва етапу">Чернігів</h3>
+          <p class="tl-item__text" data-edit="about.shliakh.step-text4" data-edit-label="Текст етапу">
             Місто, яке стало не просто місцем проживання, а головним натхненням і домом.
             Саме тут сформувалася доросла музична історія.
           </p>
@@ -200,10 +200,10 @@
       </article>
 
       <article class="tl-item" data-reveal="0.24">
-        <p class="tl-item__when">Сьогодні</p>
+        <p class="tl-item__when" data-edit="about.shliakh.text5" data-edit-label="Абзац">Сьогодні</p>
         <div>
-          <h3 class="tl-item__title">Незалежний проєкт YUDYTSKA</h3>
-          <p class="tl-item__text">
+          <h3 class="tl-item__title" data-edit="about.shliakh.step-title5" data-edit-label="Назва етапу">Незалежний проєкт YUDYTSKA</h3>
+          <p class="tl-item__text" data-edit="about.shliakh.step-text5" data-edit-label="Текст етапу">
             Власні пісні, сольна програма й дует із саксофоном. Можливість дарувати живі емоції
             на івентах по всій Україні дає ще більше сил, натхнення та ресурсів для створення
             нової музики.
@@ -217,16 +217,16 @@
 <!-- ===================================================================
      Editorial pair
      =================================================================== -->
-<section class="section" style="padding-top:0">
+<section class="section" style="padding-top:0" data-edit-section="Портрети">
   <div class="shell">
     <div class="duo-grid">
-      <figure class="fig fig--port" style="--tone:#8B8780">
+      <figure class="fig fig--port" style="--tone:#8B8780" data-edit-img="editorial-leather" data-edit-label="Альона Юдицька в чорній шкіряній куртці та сонцезахисних …">
         <picture>
           <source type="image/webp" sizes="(max-width: 700px) 92vw, 46vw" srcset="assets/img/editorial-leather-640.webp 640w, assets/img/editorial-leather-1280.webp 1280w">
           <img src="assets/img/editorial-leather-1280.jpg" width="962" height="1280" loading="lazy" decoding="async" alt="Альона Юдицька в чорній шкіряній куртці та сонцезахисних окулярах">
         </picture>
       </figure>
-      <figure class="fig fig--port" style="--tone:#474D51">
+      <figure class="fig fig--port" style="--tone:#474D51" data-edit-img="editorial-street" data-edit-label="Зйомка на вулиці Києва в чорному образі">
         <picture>
           <source type="image/webp" sizes="(max-width: 700px) 92vw, 46vw" srcset="assets/img/editorial-street-640.webp 640w, assets/img/editorial-street-1280.webp 1280w">
           <img src="assets/img/editorial-street-1280.jpg" width="960" height="1280" loading="lazy" decoding="async" alt="Зйомка на вулиці Києва в чорному образі">
@@ -239,11 +239,11 @@
 <!-- ===================================================================
      CTA
      =================================================================== -->
-<section class="section cta">
+<section class="section cta" data-edit-section="Далі">
   <div class="shell-sm">
-    <p class="eyebrow" data-reveal style="justify-content:center">Далі</p>
-    <h2 class="cta__title" data-split>Послухайте, що з цього вийшло</h2>
-    <p class="lead cta__lead" data-reveal="0.08">
+    <p class="eyebrow" data-reveal style="justify-content:center" data-edit="about.dali.eyebrow" data-edit-label="Надзаголовок">Далі</p>
+    <h2 class="cta__title" data-split data-edit="about.dali.cta-title" data-edit-label="Заголовок заклику">Послухайте, що з цього вийшло</h2>
+    <p class="lead cta__lead" data-reveal="0.08" data-edit="about.dali.cta-lead" data-edit-label="Текст заклику">
       Три авторські сингли та офіційний кліп, знятий у Києві.
     </p>
     <div class="btn-row" data-reveal="0.16">
@@ -255,12 +255,12 @@
 
 </main>
 
-<footer class="footer">
+<footer class="footer" data-edit-section="Футер">
   <div class="shell">
     <div class="footer__grid">
       <div>
         <p class="footer__mark">YUDYTSKA</p>
-        <p class="lead" style="margin-top:var(--sp-2)">
+        <p class="lead" style="margin-top:var(--sp-2)" data-edit="about.futer.lead" data-edit-label="Опис">
           Українська співачка. Живий вокал, авторські пісні, формат 2&nbsp;в&nbsp;1 із саксофоном.
         </p>
         <div class="social" style="margin-top:var(--sp-3)">
@@ -272,7 +272,7 @@
         </div>
       </div>
       <div>
-        <p class="footer__title">Розділи</p>
+        <p class="footer__title" data-edit="about.futer.footer-title" data-edit-label="Заголовок у футері">Розділи</p>
         <div class="footer__list">
           <a href="index.html">Головна</a>
           <a href="about.html">Про мене</a>
@@ -282,7 +282,7 @@
         </div>
       </div>
       <div>
-        <p class="footer__title">Контакти</p>
+        <p class="footer__title" data-edit="about.futer.footer-title2" data-edit-label="Заголовок у футері">Контакти</p>
         <div class="footer__list">
           <span>Чернігів, Україна</span>
           <span>Виступи по всій Україні</span>
@@ -293,6 +293,13 @@
     <div class="footer__bottom">
       <span>© <span data-year>2026</span> YUDYTSKA. Усі права захищені.</span>
       <span>Чернігів · Україна</span>
+      <button class="admin-open" type="button" data-admin-open
+              aria-label="Редагувати сайт" title="Редагувати сайт">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+          <circle cx="12" cy="12" r="3.2"/>
+          <path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.88-.34 1.7 1.7 0 0 0-1 1.56V21a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 8.9 19.3a1.7 1.7 0 0 0-1.88.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.7 15a1.7 1.7 0 0 0-1.56-1H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.7 8.9a1.7 1.7 0 0 0-.34-1.88l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-1.56V3a2 2 0 1 1 4 0v.09a1.7 1.7 0 0 0 1 1.56 1.7 1.7 0 0 0 1.88-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9v.09a1.7 1.7 0 0 0 1.56 1H21a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.51 1z"/>
+        </svg>
+      </button>
     </div>
   </div>
 </footer>
